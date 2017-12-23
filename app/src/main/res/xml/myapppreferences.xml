@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Datos Personales">
+        <EditTextPreference
+            android:dialogTitle="Introduce tu nombre"
+            android:key="nombre"
+            android:summary="Indica tu nombre"
+            android:title="Nombre" />
+        <ListPreference
+            android:entries="@array/array_sexo_nombre"
+            android:entryValues="@array/array_sexo_valor"
+            android:key="sexo"
+            android:summary="Indica tu sexo"
+            android:title="Sexo" />
+        <CheckBoxPreference
+            android:key="mayorDeEdad"
+            android:summary="Indica si eres mayor de edad"
+            android:title="Mayor de edad" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Sonido">
+        <CheckBoxPreference
+            android:key="sonido"
+            android:summary="Indica si quieres sonido"
+            android:title="Sonido" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Preferencias Personales">
+        <MultiSelectListPreference
+            android:dialogTitle="Selecciona tus preferencias"
+            android:entries="@array/array_preferenciasNombre"
+            android:entryValues="@array/array_preferenciasValor"
+            android:key="preferencias"
+            android:summary="Indica tus preferencias personales"
+            android:title="Preferencias Personales" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Otra categoria" >
+        <EditTextPreference
+            android:defaultValue="[Introduce un string aqui]"
+            android:key="EditTextPref"
+            android:summary="Introduce un String"
+            android:title="EditText" />
+
+        <RingtonePreference
+            android:key="ringtonePref"
+            android:summary="Selecciona un Tono"
+            android:title="RingTones" />
+
+        <PreferenceScreen
+            android:key="secondPrefScreenPref"
+            android:summary="Pulse aquí para ir a la segunda pantalla de Preferencias"
+            android:title="Segunda Pantalla Preferencias" >
+            <EditTextPreference
+                android:key="secondEditTextPref"
+                android:summary="Introduce un String"
+                android:title="EditText (Segunda Pantalla)" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

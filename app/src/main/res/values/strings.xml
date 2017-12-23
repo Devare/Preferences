@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Preferences</string>
+    <string name="preferencias">Preferencias de la aplicación</string>
+    <string name="consultar">Consultar preferencias</string>
+    <string name="textoMain">Preferencias guardadas</string>
+    <string name="nombre">Nombre: </string>
+    <string name="sexo">Sexo:</string>
+    <string name="edad">Mayor de edad: </string>
+    <string name="sonido">Sonido: </string>
+
+    <string-array name="array_sexo_nombre">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
+    <string-array name="array_sexo_valor">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
+    <string-array name="array_preferenciasNombre">
+        <item>Deportes</item>
+        <item>Cine</item>
+        <item>Informática</item>
+    </string-array>
+
+    <string-array name="array_preferenciasValor">
+        <item>Deportes</item>
+        <item>Cine</item>
+        <item>Informática</item>
+    </string-array>
+</resources>
